@@ -23,9 +23,9 @@ Usage
 
 ```
 converter = Itaiji::Converter.new
-converter.to_seijitai('髙橋') # => '高橋'
+converter.convert_seijitai('髙橋') # => '高橋'
 
-converter.to_itaiji('高橋') # => '髙橋'
+converter.convert_itaiji('高橋') # => '髙橋'
 ```
 
 Source

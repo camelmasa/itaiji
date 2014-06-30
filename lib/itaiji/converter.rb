@@ -1,7 +1,7 @@
 #encoding: utf-8
 module Itaiji
   class Converter
-    def to_seijitai(string)
+    def convert_seijitai(string)
       itaiji_list.each do |itaiji_set|
 
         seijitai = itaiji_set.keys.first
@@ -12,7 +12,7 @@ module Itaiji
       string
     end
 
-    def to_itaiji(string)
+    def convert_itaiji(string)
       itaiji_list.each do |itaiji_set|
 
         seijitai = itaiji_set.keys.first
