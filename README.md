@@ -1,6 +1,6 @@
 # itaiji
 
-<a href="https://travis-ci.org/camelmasa/itaiji"><img src="https://camo.githubusercontent.com/a3e361cf2fc093115e162917e806518afe919705/68747470733a2f2f7472617669732d63692e6f72672f63616d656c6d6173612f636f6e6e6563742e706e67" alt="Build Status" data-canonical-src="https://travis-ci.org/camelmasa/itaiji.png" style="max-width:100%;"></a>
+[![Build Status](https://travis-ci.org/camelmasa/itaiji.png)](https://travis-ci.org/camelmasa/itaiji)
 
 
 Convert japanese itaiji(異体字) to seijitai(正字体) and also reverse convert.
