@@ -1,7 +1,7 @@
 # encoding: utf-8
 Gem::Specification.new do |spec|
   spec.name          = "itaiji"
-  spec.version       = "0.1.1"
+  spec.version       = "0.1.2"
   spec.authors       = ["Masahiro Saito"]
   spec.email         = ["camelmasa@gmail.com"]
   spec.summary       = %q{Convert japanese itaiji(異体字) to seijitai(正字体) and also reverse convert.}
