@@ -41,6 +41,15 @@ using Itaiji::Conversions
 (only ruby version >= 2.0.0)
 
 
+Test
+----
+
+test command.
+
+```
+rake
+```
+
 Source
 ------
 http://wwwap.hi.u-tokyo.ac.jp/ships/itaiji_list.jsp
