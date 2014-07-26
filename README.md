@@ -24,10 +24,22 @@ Usage
 
 ```
 converter = Itaiji::Converter.new
-converter.convert_seijitai('髙橋') # => '高橋'
 
-converter.convert_itaiji('高橋') # => '髙橋'
+converter.convert_seijitai('齊藤') # => '斉藤'
+converter.convert_itaiji('斉藤')   # => '齊藤'
 ```
+
+or
+
+```
+using Itaiji::Conversions
+
+'齊藤'.to_seijitai # => '斉藤'
+'斉藤'.to_itaiji   # => '齊藤'
+```
+
+(only ruby version >= 2.0.0)
+
 
 Source
 ------
