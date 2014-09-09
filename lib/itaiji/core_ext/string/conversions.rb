@@ -13,6 +13,9 @@ module Itaiji
       private
 
       def itaiji_converter
+        test = {:test => 'test'}
+
+
         @itaiji_converter ||= Itaiji::Converter.new
       end
     end
