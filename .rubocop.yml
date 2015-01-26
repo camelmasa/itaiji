@@ -1,0 +1,27 @@
+AllCops:
+  Exclude:
+    - 'Guardfile'
+    - 'bower_components/**/*'
+    - 'app/helpers/bootstrap_flash_helper.rb'
+    - 'bin/**/*'
+    - 'config/**/*'
+    - 'db/**/*'
+  RunRailsCops: true
+
+Metrics/LineLength:
+  Max: 120
+
+Style/Documentation:
+  Enabled: false
+
+Style/DoubleNegation:
+  Enabled: false
+
+Style/SingleSpaceBeforeFirstArg:
+  Enabled: false
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+Style/UnlessElse:
+  Enabled: false
