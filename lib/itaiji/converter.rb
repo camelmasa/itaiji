@@ -30,6 +30,8 @@ module Itaiji
       puts "hound_test"
       puts 'hound_test'
       puts "hound_test"
+      puts 'hound_test'
+      puts "hound_test"
     end
 
     private
