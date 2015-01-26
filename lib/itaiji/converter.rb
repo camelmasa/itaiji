@@ -23,6 +23,11 @@ module Itaiji
       string
     end
 
+    def hound_test
+      puts 'hound_test'
+      puts "hound_test"
+    end
+
     private
 
     def itaiji_list
