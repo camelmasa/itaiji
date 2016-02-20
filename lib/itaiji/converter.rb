@@ -2,25 +2,21 @@
 module Itaiji
   class Converter
     def convert_seijitai(string)
-      itaiji_list.each do |itaiji_set|
-
+      itaiji_list.inject(string) do |string, itaiji_set|
         seijitai = itaiji_set.keys.first
-        itaijis = itaiji_set.values.first
+        itaijis  = itaiji_set.values.first
 
-        string.gsub!(/#{itaijis.join('|')}/, seijitai)
+        string.gsub(/#{itaijis.join('|')}/, seijitai)
       end
-      string
     end
 
     def convert_itaiji(string)
-      itaiji_list.each do |itaiji_set|
-
+      itaiji_list.inject(string) do |string, itaiji_set|
         seijitai = itaiji_set.keys.first
-        itaiji = itaiji_set.values.flatten.first
+        itaiji   = itaiji_set.values.flatten.first
 
-        string.gsub!(/#{seijitai}/, itaiji)
+        string.gsub(/#{seijitai}/, itaiji)
       end
-      string
     end
 
     private
