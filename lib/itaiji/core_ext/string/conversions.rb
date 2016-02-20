@@ -1,7 +1,6 @@
 module Itaiji
   module Conversions
     refine String do
-
       def to_seijitai
         itaiji_converter.convert_seijitai(self)
       end
