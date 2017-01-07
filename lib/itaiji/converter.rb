@@ -1,4 +1,3 @@
-#encoding: utf-8
 module Itaiji
   class Converter
     def convert_seijitai(string)

@@ -1,4 +1,3 @@
-# encoding: utf-8
 Gem::Specification.new do |spec|
   spec.name          = 'itaiji'
   spec.version       = '0.1.5'
