@@ -3,8 +3,8 @@ Gem::Specification.new do |spec|
   spec.version       = '0.1.5'
   spec.authors       = ['Masahiro Saito']
   spec.email         = ['camelmasa@gmail.com']
-  spec.summary       = 'Convert japanese itaiji(異体字) to seijitai(正字体) and also reverse convert.'
-  spec.description   = 'Convert japanese itaiji(異体字) to seijitai(正字体) and also reverse convert.'
+  spec.summary       = 'Convert japanese itaiji(異体字) to seijitai(正字体).'
+  spec.description   = 'Convert japanese itaiji(異体字) to seijitai(正字体).'
   spec.homepage      = 'https://github.com/camelmasa/itaiji'
   spec.license       = 'MIT'
 
