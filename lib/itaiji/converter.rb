@@ -1,6 +1,6 @@
 module Itaiji
   class Converter
-    def convert_seijitai(string)
+    def seijitai(string)
       itaiji_list.inject(string) do |string, itaiji_set|
         seijitai = itaiji_set.keys.first
         itaijis  = itaiji_set.values.first
@@ -9,7 +9,11 @@ module Itaiji
       end
     end
 
-    def convert_itaiji(string)
+    def convert_seijitai(string)
+      seijitai(string)
+    end
+
+    def itaiji(string)
       itaiji_list.inject(string) do |string, itaiji_set|
         seijitai = itaiji_set.keys.first
         itaiji   = itaiji_set.values.flatten.first
@@ -17,6 +21,14 @@ module Itaiji
         string.gsub(/#{seijitai}/, itaiji)
       end
     end
+
+    def convert_itaiji(string)
+      itaiji(string)
+    end
+
+    extend Gem::Deprecate
+    deprecate :convert_seijitai, :seijitai, 2018, 1
+    deprecate :convert_itaiji,   :itaiji,   2018, 1
 
     private
 
