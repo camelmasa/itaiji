@@ -2,11 +2,11 @@ module Itaiji
   module Conversions
     refine String do
       def to_seijitai
-        itaiji_converter.convert_seijitai(self)
+        itaiji_converter.seijitai(self)
       end
 
       def to_itaiji
-        itaiji_converter.convert_itaiji(self)
+        itaiji_converter.itaiji(self)
       end
 
       private
