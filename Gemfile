@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
-gem 'coveralls', require: false
-
 gemspec
+
+group :test do
+  gem 'simplecov', require: false
+  gem 'codeclimate-test-reporter', require: false
+end

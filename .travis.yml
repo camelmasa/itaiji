@@ -1,8 +1,11 @@
 language: ruby
 rvm:
-  # - 1.9.3-p551
-  - 2.0.0-p648
-  - 2.1.8
-  - 2.2.4
-  - 2.3.0
+- 2.1.10
+- 2.2.6
+- 2.3.3
+- 2.4.0
 script: bundle exec rake
+after_success: codeclimate-test-reporter
+env:
+  global:
+    secure: WePtrkj/9oP0jbEFdaOcHm/fee0tzWBA1kTNhrvEiHtgbQWfF4iW4ihov74Up/jCad49furkZ+tuvPfkLdh6Y8t7P7CbaEUe8kOzO5+JCSa2AXq9FzWl7xnxC0/tztjRomHfREpbZBBlacmLvro2JJlIOn+0cAAwoRG+ixSUgtY=
