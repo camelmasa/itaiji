@@ -6,7 +6,7 @@
 [![Dependency Status](https://gemnasium.com/camelmasa/itaiji.svg)](https://gemnasium.com/camelmasa/itaiji)
 
 
-Convert japanese itaiji(異体字) to seijitai(正字体) and also reverse convert.
+Convert japanese itaiji(異体字) to seijitai(正字体).
 Instration
 ----------
 
@@ -28,8 +28,8 @@ Usage
 ```
 converter = Itaiji::Converter.new
 
-converter.convert_seijitai('齊藤') # => '斉藤'
-converter.convert_itaiji('斉藤')   # => '齊藤'
+converter.seijitai('齊藤') # => '斉藤'
+converter.itaiji('斉藤')   # => '齊藤'
 ```
 
 or
