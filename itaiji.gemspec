@@ -1,6 +1,8 @@
+require File.expand_path('../lib/itaiji/version', __FILE__)
+
 Gem::Specification.new do |spec|
   spec.name          = 'itaiji'
-  spec.version       = '0.1.5'
+  spec.version       = Itaiji::VERSION
   spec.authors       = ['Masahiro Saito']
   spec.email         = ['camelmasa@gmail.com']
   spec.summary       = 'Convert japanese itaiji(異体字) to seijitai(正字体).'
