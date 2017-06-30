@@ -1,12 +1,7 @@
 module Itaiji
   class Converter
     def seijitai(string)
-      itaiji_list.inject(string) do |string, itaiji_set|
-        seijitai = itaiji_set.keys.first
-        itaijis  = itaiji_set.values.first
-
-        string.gsub(/#{itaijis.join('|')}/, seijitai)
-      end
+      string.gsub(/#{seijitai_pairs.keys.join("|")}/, seijitai_pairs)
     end
 
     def convert_seijitai(string)
@@ -14,12 +9,7 @@ module Itaiji
     end
 
     def itaiji(string)
-      itaiji_list.inject(string) do |string, itaiji_set|
-        seijitai = itaiji_set.keys.first
-        itaiji   = itaiji_set.values.flatten.first
-
-        string.gsub(/#{seijitai}/, itaiji)
-      end
+      string.gsub(/#{itaiji_pairs.keys.join("|")}/, itaiji_pairs)
     end
 
     def convert_itaiji(string)
@@ -31,6 +21,22 @@ module Itaiji
     deprecate :convert_itaiji,   :itaiji,   2018, 1
 
     private
+
+    def seijitai_pairs
+      @seijitai_pairs ||= itaiji_list.inject({}) do |pairs, (seijitai, itaijis)|
+        itaijis.each do |itaiji|
+          pairs[itaiji] = seijitai
+        end
+        pairs
+      end
+    end
+
+    def itaiji_pairs
+      @itaiji_pairs ||= itaiji_list.inject({}) do |pairs, (seijitai, itaijis)|
+        pairs[seijitai] = itaijis.first
+        pairs
+      end
+    end
 
     def itaiji_list
       @itaiji_list ||= begin

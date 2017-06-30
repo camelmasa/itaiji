@@ -1,0 +1,15 @@
+#! /usr/bin/env ruby
+
+require 'benchmark'
+require 'itaiji'
+
+converter = Itaiji::Converter.new
+
+Benchmark.bm do |benchmark|
+  benchmark.report do
+    10000.times do
+      converter.seijitai("齊藤正澔")
+      converter.itaiji("斉藤正浩")
+    end
+  end
+end
