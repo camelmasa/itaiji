@@ -4,10 +4,10 @@ require 'yaml'
 require 'itaiji/fetcher'
 
 fetcher = Itaiji::Fetcher.new
-itaiji_sets = fetcher.fetch.to_h.map do |itaiji_set|
-  hash = {}
-  hash[itaiji_set.seijitai] = itaiji_set.itaijis
-  hash
+
+itaiji_sets = fetcher.fetch.to_h.inject({}) do |itaiji_sets, itaiji_set|
+  itaiji_sets[itaiji_set.seijitai] = itaiji_set.itaijis
+  itaiji_sets
 end
 
 itaiji_file_path = File.expand_path('../../source/itaji_list.yml', __FILE__)
