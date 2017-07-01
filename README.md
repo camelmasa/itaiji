@@ -5,10 +5,9 @@
 [![Test Coverage](https://codeclimate.com/github/camelmasa/itaiji/badges/coverage.svg)](https://codeclimate.com/github/camelmasa/itaiji)
 [![Dependency Status](https://gemnasium.com/camelmasa/itaiji.svg)](https://gemnasium.com/camelmasa/itaiji)
 
-
 Convert japanese itaiji(異体字) to seijitai(正字体).
-Instration
-----------
+
+## Instration
 
 Add this line to your application's Gemfile:
 
@@ -22,8 +21,7 @@ Or install it yourself as:
 
     $ gem install itaiji
 
-Usage
------
+## Usage
 
 ```
 converter = Itaiji::Converter.new
@@ -43,16 +41,26 @@ using Itaiji::Conversions
 
 (only ruby version >= 2.0.0)
 
+## Commands
 
-Test
-----
-
-test command.
+Test command.
 
 ```
 rake
 ```
 
-Source
-------
+Fetch source file command.
+
+```
+bin/fetch
+```
+
+Benchmark command.
+
+```
+bin/benchmark
+```
+
+## Source
+
 http://wwwap.hi.u-tokyo.ac.jp/ships/itaiji_list.jsp
