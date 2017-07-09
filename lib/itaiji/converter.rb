@@ -40,7 +40,7 @@ module Itaiji
 
     def itaiji_list
       @itaiji_list ||= begin
-        itaiji_file_path = File.expand_path('../../../source/itaji_list.yml', __FILE__)
+        itaiji_file_path = File.expand_path('../../../source/itaiji_list.yml', __FILE__)
         YAML.load_file(itaiji_file_path)
       end
     end
