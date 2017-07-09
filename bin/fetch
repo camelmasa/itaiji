@@ -11,5 +11,5 @@ itaiji_sets = fetcher.fetch.to_h.inject({}) do |itaiji_sets, itaiji_set|
   itaiji_sets
 end
 
-itaiji_file_path = File.expand_path('../../source/itaji_list.yml', __FILE__)
+itaiji_file_path = File.expand_path('../../source/itaiji_list.yml', __FILE__)
 File.write(itaiji_file_path, itaiji_sets.to_yaml)
