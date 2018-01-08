@@ -12,7 +12,7 @@ describe Itaiji::Conversions do
     end
   end
 
-  describe '#convert_itaiji' do
+  describe '#to_itaiji' do
     it 'converts name from seijitai to itaiji' do
       expect(seijitai.to_itaiji).to eq itaiji
     end
