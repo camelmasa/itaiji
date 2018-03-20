@@ -7,7 +7,7 @@
 
 Convert japanese itaiji(異体字) to seijitai(正字体).
 
-## Instration
+## Installation
 
 Add this line to your application's Gemfile:
 
