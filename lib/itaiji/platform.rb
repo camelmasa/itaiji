@@ -3,7 +3,7 @@ module Itaiji
     OS =
       case os = RbConfig::CONFIG["host_os"].downcase
       when /linux/
-        "linux"
+        "unknown-linux-gnu"
       when /darwin/
         "apple-darwin"
       else
