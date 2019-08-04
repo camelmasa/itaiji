@@ -14,6 +14,11 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(spec)/})
   spec.require_paths = ['lib']
 
+  spec.extensions = Dir['ext/extconf.rb']
+
+  spec.add_dependency "ffi", "~> 1.11"
+  spec.add_dependency "faraday", "~> 0.15"
+  spec.add_dependency "faraday_middleware", "~> 0.13"
   spec.add_development_dependency "nokogiri", "~> 1.8"
   spec.add_development_dependency "rake", "~> 12.1"
   spec.add_development_dependency "rspec", "~> 3.7"

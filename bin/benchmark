@@ -6,6 +6,22 @@ require 'itaiji'
 
 converter = Itaiji::Converter.new
 
+puts "Pure ruby implementation"
+
+Benchmark.bm do |benchmark|
+  benchmark.report do
+    10000.times do
+      converter.seijitai("齊藤正澔")
+      converter.itaiji("斉藤正浩")
+    end
+  end
+end
+
+require 'itaiji/experimental'
+
+puts "\n"
+puts "Experimental feature (Rust implementation)"
+
 Benchmark.bm do |benchmark|
   benchmark.report do
     10000.times do
