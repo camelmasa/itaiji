@@ -3,6 +3,7 @@ require "faraday_middleware"
 require "openssl"
 require "yaml"
 require "zlib"
+require "logger"
 require "rubygems/package"
 
 require "itaiji/platform"
@@ -21,6 +22,11 @@ module Itaiji
       @version = libitaiji["version"]
       @native_path = native_path
       @ext_zip_file_url = "#{BASE_URL}/#{version}/itaiji-#{version}-#{Platform.tuple}.tar.gz"
+
+      logger.debug(@checksum)
+      logger.debug(@version)
+      logger.debug(@native_path)
+      logger.debug(@ext_zip_file_url)
     end
 
     def fetch_and_decompress
@@ -30,6 +36,10 @@ module Itaiji
     end
 
     private
+
+    def logger
+      @logger ||= Logger.new(STDOUT)
+    end
 
     def fetch_ext_zip_file
       Faraday.new(url: @ext_zip_file_url) do |faraday|
