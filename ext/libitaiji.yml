@@ -1,0 +1,4 @@
+version: "v0.0.1"
+checksums:
+  x86_64-darwin: "40b951f7639d5b080c866675f881a3218bc9681be179da8b1b4922e867f6c6ff"
+  x86_64-linux: "88fb8cc94fc67adbf681c91afc3d453cac3e7c2119012569c59f49a322f3f76f"
