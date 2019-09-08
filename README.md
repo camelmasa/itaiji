@@ -1,9 +1,6 @@
 # itaiji
 
-[![Build Status](https://travis-ci.org/camelmasa/itaiji.png)](https://travis-ci.org/camelmasa/itaiji)
-[![Code Climate](https://codeclimate.com/github/camelmasa/itaiji.png)](https://codeclimate.com/github/camelmasa/itaiji)
-[![Test Coverage](https://codeclimate.com/github/camelmasa/itaiji/badges/coverage.svg)](https://codeclimate.com/github/camelmasa/itaiji)
-[![Dependency Status](https://gemnasium.com/camelmasa/itaiji.svg)](https://gemnasium.com/camelmasa/itaiji)
+![Build Status](https://github.com/camelmasa/itaiji/workflows/pull_request/badge.svg)
 
 Convert japanese itaiji(異体字) to seijitai(正字体).
 
