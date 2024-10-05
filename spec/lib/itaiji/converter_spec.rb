@@ -1,8 +1,8 @@
 require 'spec_helper'
 
 describe Itaiji::Converter do
-  let(:itaiji) { '齊藤正澔' }
-  let(:seijitai) { '斉藤正浩' }
+  let(:itaiji) { '齊藤祐澔' }
+  let(:seijitai) { '斉藤祐浩' }
   let(:converter) { Itaiji::Converter.new }
 
   describe '#seijitai' do
